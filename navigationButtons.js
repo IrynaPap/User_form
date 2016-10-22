@@ -24,7 +24,9 @@ window.next = function () {
         } else {
             errorMessege.style.display = "none"
             forms[i].style.display = "none";
-            document.getElementById("start_button").style.display = "block";
+            document.getElementById("start_button").style.display = "inline-block";
+            document.getElementById("next_button").style.display = "none"
+            document.getElementById("prev_button").style.display = "none"
             createResultForm()
         }
     } else {
@@ -43,4 +45,6 @@ window.prev = function () {
         i--;
     }
 }
-
+window.start = function () {
+    i = 0;
+}

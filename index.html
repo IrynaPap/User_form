@@ -5,12 +5,13 @@
     <title>User Form</title>
     <script src="bundle.js"></script>
     <!--<script src="./bootstrap/js/bootstrap.min.js"></script>-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
     <div class="form-group container-fluid">
-        <div class="row col-sm-2 col-md-offset-5 col-lg-offset-5">
+        <div class="row col-sm-2 col-md-offset-5 col-lg-offset-5" style="margin-right:100%">
             <button class="btn btn-default text-center" onclick="page(this)">1</button>
             <button class="btn btn-default text-center" onclick="page(this)">2</button>
             <button class="btn btn-default text-center" onclick="page(this)">3</button>
@@ -57,9 +58,9 @@
                 </div>
 
             </form>
-            <form name="user-form" class="user-form">
+            <form name="user-form" class="user-form last_form">
                 <p>4. Выберите любимого котика
-                    <div style="width: 650px">
+                    <div>
                         <div class="chooseImg" name="cat1" style="background-image: url('./files/cat1.jpg')" onclick="chooseCat(this)"></div>
                         <div class="chooseImg" name="cat2" style="background-image: url('./files/cat2.jpg')" onclick="chooseCat(this)"></div>
                         <div class="chooseImg" name="cat3" style="background-image: url('./files/cat3.jpg')" onclick="chooseCat(this)"></div>
@@ -68,10 +69,7 @@
                     </div>
             </form>
             <div id="error_empty" style="display: none">Заполните все поля, пожалуйста!</div>
-            <button class="btn btn-default text-center" onclick="next()">Следующий	&#8250;</button>
-            <button class="btn btn-default text-center" onclick="prev()">&#8249  Предыдущий </button>
-            <button id="final_button" class="btn btn-default text-center" onclick="final()">Завершить </button>
-            <button id="start_button" class="btn btn-default text-center" style="display: none" onclick="next()">Начать сначала</button>
+           
             <div id="result">
                 <div id="pers_info">
                     <h1></h1>
@@ -85,6 +83,11 @@
             </div>
 
         </div>
+        <button id="next_button" class="btn btn-default text-center nav_btn " onclick="prev()">&#8249  Предыдущий </button>
+         <button id="prev_button" class="btn btn-default text-center nav_btn" onclick="next()">Следующий	&#8250;</button>
+            
+            <button id="final_button" class="btn btn-default text-center" style="display: none" onclick="final()">Завершить </button>
+            <button id="start_button" class="btn btn-default text-center" style="display: none" onclick="start()">Начать сначала</button>
     </div>
 
 </body>
