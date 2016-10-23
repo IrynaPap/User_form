@@ -16,7 +16,7 @@
             <button class="btn btn-default text-center" onclick="page(this)">3</button>
             <button class="btn btn-default text-center" onclick="page(this)">4</button>
 
-            <form name="user-form" class="user-form" style="display:block">
+            <form name="user-form" class="user-form">
                 <p> 1. Введите имя и e-mail </p>
                 <div class="btn-group">
                     <input type="text" class="form-control" placeholder="Имя" required/>
@@ -26,16 +26,20 @@
                 <div id="errorMail" class="error"> - Введите email в формате email@lun.ua!</div>
             </form>
 
-            <form name="user-form" class="user-form">
+            <form name="user-form" class="user-form" style="display:block">
                 <p>2. Выберите страну и город</p>
                 <input type="text" class="form-control  dropdown-toggle" type="button" data-toggle="dropdown" placeholder="Страна                         &#9660;"
                     onclick="getCountry()" required/>
                 </input>
                 <ul id="dropdown-country" class="dropdown-menu" style="display:none"></ul>
                 <br>
-                <input type="text" class="form-control dropdown-toggle" type="button" data-toggle="dropdown" onclick="getCity()" placeholder="Город                            &#9660;"
+                <input type="text" class="form-control dropdown-toggle" type="button" data-toggle="dropdown" onclick="getCity()" placeholder="Город"    list="country_list"
                     required/>
-                </input>
+                  <datalist id="country_list">
+                  <option>1</option>
+                    <option>2</option>
+                      <option>3</option>
+</datalist>
                 <ul id="dropdown-city" class="dropdown-menu" style="display:none"></ul>
                 <div id="error"> - Выберите другую страну! </div>
             </form>

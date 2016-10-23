@@ -11,38 +11,47 @@ window.page = function (page) {
 }
 
 window.next = function () {
-    var errorMessege = document.getElementById("error_empty");
+
     forms[i].setAttribute("page", i)
-    console.log(i)
+    
+    if(i == 2){
+        window.socArr = []
+        //for(key in socField){
+            if(socField.style.display=="inline-block"){
+                console.log(socField.length)
+        }
+        //}
+
+        console.log(socField)
+    }
+
     if (checkValidayte()) {
-        errorMessege.style.display = "none"
         if (i !== forms.length - 1) {
             forms[i].style.display = "none";
             forms[i + 1].style.display = "block";
-            errorMessege.style.display = "none"
             i++;
         } else {
-            errorMessege.style.display = "none"
             forms[i].style.display = "none";
             document.getElementById("start_button").style.display = "inline-block";
             document.getElementById("next_button").style.display = "none"
             document.getElementById("prev_button").style.display = "none"
             createResultForm()
         }
-    } else {
-        if (errorMessege.style.display == "none") {
-            errorMessege.style.display = "block"
-        }
-
     }
 }
 
 window.prev = function () {
+
+
     var forms = document.getElementsByName("user-form");
     if (i !== 0) {
         forms[i].style.display = "none";
         forms[i - 1].style.display = "block";
         i--;
+       /* var errorElem = document.getElementsByClassName('error');
+        for (i = 0; i < errorElem.length; i++) {
+            errorElem[i].style.display = 'none';
+        }*/
     }
 }
 window.start = function () {

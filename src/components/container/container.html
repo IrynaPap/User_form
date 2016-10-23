@@ -1,0 +1,45 @@
+<div class="row">
+	<div class="col-xs-8 col-xs-offset-2 col-md-2 col-md-offset-5" style="margin-right:100%">
+		<div class="row">
+			<button class="btn btn-default text-center" onclick="page(this)">1</button>
+			<button class="btn btn-default text-center" onclick="page(this)">2</button>
+			<button class="btn btn-default text-center" onclick="page(this)">3</button>
+			<button class="btn btn-default text-center" onclick="page(this)">4</button>
+		</div>
+	</div>
+</div>
+
+${require('../step1')}
+${require('../step2')}
+${require('../step3')}
+${require('../step4')}
+
+<div id="result">
+	<div id="pers_info">
+		<h1></h1>
+		<p></p>
+	</div>
+	<span></span>
+	<ul></ul>
+	<div id="pics">
+
+	</div>
+</div>
+
+
+<div class="row">
+	<button id="next_button" class="btn btn-default text-center nav_btn " onclick="prev()"> &#8249  Предыдущий </button>
+	<button id="prev_button" class="btn btn-default text-center nav_btn" onclick="next()">Следующий	&#8250;</button>
+</div>
+<div class="row">
+	<button id="final_button" class="btn btn-default text-center" style="display: none" onclick="final()">Завершить </button>
+	<button id="start_button" class="btn btn-default text-center" style="display: none" onclick="start()">Начать сначала</button>
+</div>
+
+</div>
+<div id="error_name" class="error"> - Введите имя! </div>
+<div id="error_mail" class="error"> - Введите email в формате email@lun.ua!</div>
+<div id="error_country" class="error"> - Выберите страну! </div>
+<div id="error_city" class="error"> - Выберите город! </div>
+<div id="error_soc" class="error"> - Заполните поле социальной сети! </div>
+<div id="error_cat" class="error"> - Нужно выбрать любимого котика! </div>

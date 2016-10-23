@@ -1,95 +1,18 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>User Form</title>
-    <script src="bundle.js"></script>
-    <!--<script src="./bootstrap/js/bootstrap.min.js"></script>-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+	<meta charset="utf-8">
+	<title>User Form</title>
+	<script src="bundle.js"></script>
+	<!--<script src="./bootstrap/js/bootstrap.min.js"></script>-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
-    <div class="form-group container-fluid">
-        <div class="row col-sm-2 col-md-offset-5 col-lg-offset-5" style="margin-right:100%">
-            <button class="btn btn-default text-center" onclick="page(this)">1</button>
-            <button class="btn btn-default text-center" onclick="page(this)">2</button>
-            <button class="btn btn-default text-center" onclick="page(this)">3</button>
-            <button class="btn btn-default text-center" onclick="page(this)">4</button>
-
-            <form name="user-form" class="user-form" >
-                <p> 1. Введите имя и e-mail </p>
-                <input type="text" class="form-control" placeholder="Имя" required/>
-                <br>
-                <input type="email" class="form-control" placeholder="Email" required/>
-                <div id="error_mail" class="error"> - Введите email в формате email@lun.ua!</div>
-            </form>
-
-            <form name="user-form" class="user-form" style="display:block">
-                <p>2. Выберите страну и город</p>
-       
-                <input type="text"  class="form-control dropdown_input" type="button" placeholder="Страна                         &#9660;"
-                    onclick="getCountry()" required/>
-                </input>
-                <ul id="dropdown_country" class="dropdown-menu"  role="menu" style="display:none"></ul>
-                <br>
-                <input type="text" class="form-control dropdown_input" type="button" onclick="getCity()" placeholder="Город                            &#9660;"
-                    required/>
-                </input>
-                <ul id="dropdown_city" class="dropdown-menu" style="display:none"></ul>
-              
-                <div id="error"> - Выберите другую страну! </div>
-            </form>
-
-            <form name="user-form" class="user-form">
-                <p>3.Отметьте социальные сети </p>
-                <div id="checkboxes">
-                    <input type="checkbox" name="option2" value="a2" onclick="check(this)">Facebook
-                    <input type="text" class="checked" placeholder="Имя" style="display:none" required/>
-                    <Br>
-                    <input type="checkbox" name="option3" value="a3" onclick="check(this)">Вконтакте
-                    <input type="text" class="checked" placeholder="Имя" style="display:none" required/>
-                    <Br>
-                    <input type="checkbox" name="option4" value="a4" onclick="check(this)">Twitter
-                    <input type="text" class="checked" placeholder="Имя" style="display:none" required/>
-                    <Br>
-                    <input type="checkbox" name="option5" value="a5" onclick="check(this)">Одноклассники
-                    <input type="text" class="checked" placeholder="Имя" style="display:none" required/>
-                </div>
-
-            </form>
-            <form name="user-form" class="user-form last_form">
-                <p>4. Выберите любимого котика
-                    <div>
-                        <div class="chooseImg" name="cat1" style="background-image: url('./files/cat1.jpg')" onclick="chooseCat(this)"></div>
-                        <div class="chooseImg" name="cat2" style="background-image: url('./files/cat2.jpg')" onclick="chooseCat(this)"></div>
-                        <div class="chooseImg" name="cat3" style="background-image: url('./files/cat3.jpg')" onclick="chooseCat(this)"></div>
-                        <div class="chooseImg" name="dog4" style="background-image: url('./files/dog4.jpg')" onclick="chooseCat(this)"></div>
-                        <div id="error_dog">Вы выбрали собачку. А надо котика.</div>
-                    </div>
-            </form>
-            <div id="error_empty" style="display: none">Заполните все поля, пожалуйста!</div>
-           
-            <div id="result">
-                <div id="pers_info">
-                    <h1></h1>
-                    <p></p>
-                </div>
-                <span></span>
-                <ul></ul>
-                <div id="pics">
-
-                </div>
-            </div>
-
-        </div>
-        <button id="next_button" class="btn btn-default text-center nav_btn " onclick="prev()">&#8249  Предыдущий </button>
-         <button id="prev_button" class="btn btn-default text-center nav_btn" onclick="next()">Следующий	&#8250;</button>
-            
-            <button id="final_button" class="btn btn-default text-center" style="display: none" onclick="final()">Завершить </button>
-            <button id="start_button" class="btn btn-default text-center" style="display: none" onclick="start()">Начать сначала</button>
-    </div>
-
+	<main class="container-fluid">
+		<div class="row"></div>
+	</main>
 </body>
 
 </html>

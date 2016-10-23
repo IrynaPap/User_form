@@ -1,0 +1,132 @@
+button, p {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
+}
+
+p {
+    margin-top: 16px !important;
+    margin-bottom: 40px !important;
+}
+
+input {
+    border-radius: 2px !important;
+    margin-bottom: 16px !important;
+}
+
+input:invalid {
+    border: 1px solid #ff0000;
+}
+input:valid {
+    border: 1px solid #bbbbbb;
+}
+form {
+    display: none;
+}
+.dropdown-menu{
+    width: 100%;
+}
+.row {
+    margin-top: 5%;
+    text-align: center;
+}
+#checkboxes {
+    float: left;
+    text-align: left;
+}
+#checkboxes input {
+    /*margin: 5px;*/
+    background-color: white;
+}
+.user-form {
+    width: auto;
+    height: 150px;
+    text-align: center;
+    margin-bottom: 150px;
+}
+#error {
+    display: none;
+    color: #ff0000;
+    float: right;
+}
+#error_country, #error_name{
+    top: 213;
+}
+
+#error_cat{
+    left: 1250;
+    top: 270;
+}
+#error_mail{
+    top:280;
+}
+
+.error {
+    display: none;
+    color: #ff0000;
+    position: absolute;
+    left: 1100;
+    top: 280;
+}
+#error_empty {
+    display: none;
+    color: #ff0000;
+    margin: 2%;
+}
+#error_dog {
+    display: none;
+    color: #ff0000;
+    float: left;
+}
+.chooseImg {
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    border: 2px solid #ff9800;
+    background: 100% 100% no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+#result {
+    background-color: white;
+    display: none;
+    margin-bottom: 32px;
+}
+#pics {
+    float: right;
+    height: 195px;
+    width: 200px;
+    background: no-repeat;
+    background-size: cover;
+    margin: 24px;
+}
+.nav_btn, #start_button{
+    color: #ff9800 !important;
+  /*  display: inline-block !important;*/
+  margin: 8px;
+
+}
+
+.checked{
+      width: 140;
+    margin: 15px;
+}
+::-webkit-input-placeholder {
+        text-align: left !important;
+    }
+
+::-moz-placeholder {
+        text-align: left !important;
+}
+:-moz-placeholder {
+        text-align: left !important;
+}
+:-ms-input-placeholder {
+        text-align: left !important;
+}
+
+.last_form{
+    width: 650px;
+    margin-bottom: 150px;  
+    margin-left: -220;
+}
