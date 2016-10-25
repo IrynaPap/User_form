@@ -1,44 +1,49 @@
-<div class="row">
+<div class="row user_form">
 	<div class="col-xs-8 col-xs-offset-2 col-md-2 col-md-offset-5" style="margin-right:100%">
 		<div class="container-fluid">
 			<p>3.Отметьте социальные сети </p>
-			<div id="checkboxes">
-				<div class="form-group">
-					<div class="checkbox">
+			<div id="checkboxes" class="row col-md-12 col-sm-12 col-sm-offset-1">
+				<div class="form-group row">
+					<div class="checkbox row col-md-6 col-sm-6">
 						<label>
-									<input type="checkbox" name="facebook" value="fb" onclick="check(this)"> Facebook
-								</label>
+							<input type="checkbox" class="custom-control-input"  value="Facebook" onclick="check(this)">Facebook
 					</div>
-					<input type="text" class="checked" placeholder="Имя" style="display:none" required/>
+					<div class="row col-md-6 col-md-offset-2 col-sm-6">
+						<input type="text" id="Facebook" class="checked" placeholder="fb.com/youraccount" style="display:none" required/>
+					</div>
 				</div>
-				<div class="form-group">
-					<div class="checkbox">
+				<div class="form-group row">
+					<div class="checkbox row col-md-6 col-sm-6">
 						<label>
-									<input type="checkbox" name="vkontakte" value="vk" onclick="check(this)"> Вконтакте
-								</label>
+							<input type="checkbox" value="Vkontakte" onclick="check(this)"> Вконтакте
+						</label>
 					</div>
-					<input type="text" class="checked" placeholder="Имя" style="display:none" required/>
+					<div class="row col-md-6 col-md-offset-2 col-sm-6">
+						<input type="text" id="Vkontakte" class="checked" placeholder="vk.com/youraccount" style="display:none" required/>
+					</div>
 				</div>
-
-				<div class="form-group">
-					<div class="checkbox">
+				<div class="form-group row">
+					<div class="checkbox row col-md-6 col-sm-6">
 						<label>
-									<input type="checkbox" name="twitter" value="tw" onclick="check(this)">Twitter
-								</label>
+							<input type="checkbox" value="Twitter" onclick="check(this)">Twitter
+						</label>
 					</div>
-					<input type="text" class="checked" placeholder="Имя" style="display:none" required/>
+					<div class="row col-md-6 col-md-offset-2 col-sm-6">
+						<input type="text" id="Twitter" class="checked" placeholder="twitter.com/youraccount" style="display:none" required/>
+					</div>
 				</div>
-
-				<div class="form-group">
-					<div class="checkbox">
+				<div class="form-group row">
+					<div class="checkbox row col-md-6 col-sm-6">
 						<label>
-									<input type="checkbox" name="odnoklassniki" value="ok" onclick="check(this)">Одноклассники
-								</label>
+							<input type="checkbox" value="Odnoklassniki" onclick="check(this)">Одноклассники
+						</label>
 					</div>
-					<input type="text" class="checked" placeholder="Имя" style="display:none" required/>
+					<div class="row col-md-6 col-md-offset-2 col-sm-6">
+						<input type="text" id="Odnoklassniki" class="checked" placeholder="ok.com/youraccount" style="display:none" required/>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
+<!--${require('./step3')}-->

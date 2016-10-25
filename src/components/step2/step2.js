@@ -29,7 +29,6 @@ window.renderStep2 = function () {
                     }
                 });
             });
-
         }
     });
 
@@ -38,3 +37,4 @@ window.renderStep2 = function () {
 
     $cities[0].selectize.disable();
 }
+

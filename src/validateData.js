@@ -1,6 +1,4 @@
 
-var check = require('./createForms');
-
 window.checkValidayte = function () {
     if (i == 0) {
         if (document.querySelector("input[type=name]").value == "") {
@@ -15,11 +13,9 @@ window.checkValidayte = function () {
                 document.querySelector("input[type=email]").style.border = "auto"
                 document.getElementById('error_mail').style.display = "none";
                 document.getElementById('error_name').style.display = "none";
-                return (forms[i].checkValidity())
+                return true
             }
         }
-
-
     }
     if (i == 1) {
         if (document.getElementsByClassName("item")[0] == undefined) {
@@ -37,23 +33,23 @@ window.checkValidayte = function () {
         }
     }
     if (i == 2) {
-        if (typeof (socField) == "undefined") {
-            return true
-        } else {
-            if (socField !== "undefined") {
-                if (socField.style.display == "inline-block" && socField.value == "") {
-
+        if (typeof id !== "undefined") {
+            if (document.getElementById(id).style.display == "block") {
+                if (document.getElementById(id).value == "") {
                     document.getElementById('error_soc').style.display = "inline-block";
-
                     return false
                 } else {
                     document.getElementById('error_soc').style.display = "none";
                     return true
                 }
+            } else {
+                return true;
             }
+        } else {
+            document.getElementById('error_soc').style.display = "none";
+            return true
         }
     }
-
     if (i == 3) {
         if (typeof image == "undefined") {
             document.getElementById('error_cat').style.display = "block";

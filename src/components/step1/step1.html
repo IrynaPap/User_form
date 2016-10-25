@@ -1,12 +1,18 @@
-<div class="row">
-	<div class="col-xs-8 col-xs-offset-2 col-md-2 col-md-offset-5" style="margin-right:100%">
+<div class="row user_form" id="myForm" style="display: block">
+	<div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-5" style="margin-right:100%">
 		<div class="container-fluid">
 			<p> 1. Введите имя и e-mail </p>
-			<div class="form-group">
-				<input type="name" class="form-control" placeholder="Имя" required/>
+			<div class="form-group row">
+				<div class="col-md-5">
+					<input type="name" class="form-control" placeholder="Имя" required/>
+				</div>
+				<div id="error_name" class="error col-md-4"> - Введите имя! </div>
 			</div>
-			<div class="form-group">
-				<input type="email" class="form-control" placeholder="Email" required/>
+			<div class="form-group row">
+				<div class="col-md-5">
+					<input type="email" class="form-control" placeholder="Email" required/>
+				</div>
+				<div id="error_mail" class="error col-md-4"> - Введите email в формате email@lun.ua!</div>
 			</div>
 		</div>
 	</div>

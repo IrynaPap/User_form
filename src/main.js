@@ -1,9 +1,6 @@
 'use strict'
 
-window.forms = document.getElementsByName("user-form");
-window.i = 0;
-require("./createForms.js");
-require("./createResultForm.js");
+
 require("./navigationButtons.js")
 require("./validateData.js");
 // require("bootstrap-material-design")
@@ -21,5 +18,9 @@ var components = require('./components');
 
 $(document).ready(function () {
     $(".row").append(components.container);
+    window.forms = document.getElementsByClassName("user_form");
+    window.i = 0;
     renderStep2();
+    document.getElementsByClassName("btn_nav_top")[i].style.color = "#333"
 });
+

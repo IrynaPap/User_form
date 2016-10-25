@@ -5,6 +5,7 @@ button, p {
 }
 
 p {
+    text-align: left;
     margin-top: 16px !important;
     margin-bottom: 40px !important;
 }
@@ -20,64 +21,54 @@ input:invalid {
 input:valid {
     border: 1px solid #bbbbbb;
 }
-form {
-    display: none;
-}
+
 .dropdown-menu{
     width: 100%;
 }
+#next_button, #prev_button, #start_button{
+    margin-top: 134px;
+}
 .row {
-    margin-top: 5%;
     text-align: center;
 }
-#checkboxes {
-    float: left;
+.checkbox {
     text-align: left;
 }
-#checkboxes input {
-    /*margin: 5px;*/
-    background-color: white;
+
+.user_form {
+    display:none;
+    margin-top: 0;
 }
-.user-form {
-    width: auto;
-    height: 150px;
-    text-align: center;
-    margin-bottom: 150px;
-}
+
 #error {
     display: none;
     color: #ff0000;
     float: right;
 }
-#error_country, #error_name{
-    top: 213;
-}
-
-#error_cat{
-    left: 1250;
-    top: 270;
-}
-#error_mail{
-    top:280;
-}
 
 .error {
     display: none;
     color: #ff0000;
-    position: absolute;
-    left: 1100;
-    top: 280;
 }
 #error_empty {
     display: none;
     color: #ff0000;
-    margin: 2%;
 }
 #error_dog {
     display: none;
     color: #ff0000;
-    float: left;
 }
+
+ul{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 16px;
+    padding-left: 0;
+    }
+li{
+    list-style: none;
+}
+
 .chooseImg {
     display: inline-block;
     height: 150px;
@@ -87,6 +78,8 @@ form {
     background-size: cover;
     cursor: pointer;
 }
+
+
 #result {
     background-color: white;
     display: none;
@@ -100,11 +93,27 @@ form {
     background-size: cover;
     margin: 24px;
 }
-.nav_btn, #start_button{
+#pers_info{
+    text-align: left;
+    margin: 10%;
+}
+.nav_btn{
     color: #ff9800 !important;
   /*  display: inline-block !important;*/
-  margin: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  border-radius: 2px !important;
+}
+.btn_nav_top{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    border-radius: 2px !important;
+     color: #bbbbbb;
+}
 
+#start_button{
+    background-color:#f7931d; 
+    color: #ffffff;
 }
 
 .checked{
@@ -113,6 +122,7 @@ form {
 }
 ::-webkit-input-placeholder {
         text-align: left !important;
+        color: #bbbbbb;
     }
 
 ::-moz-placeholder {
@@ -130,3 +140,4 @@ form {
     margin-bottom: 150px;  
     margin-left: -220;
 }
+
