@@ -9,8 +9,8 @@ require("./validateData.js");
 require('bootstrap/dist/css/bootstrap.css')
 
 require("selectize")
-require("./style.css");
 require("selectize/dist/css/selectize.bootstrap3.css");
+require("./style.css");
 
 var $ = require('jquery');
 var components = require('./components');

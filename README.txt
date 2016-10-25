@@ -3,8 +3,10 @@
 1. Запустите командную строку в папке проекта (Shift+ПКМ);
 2. В командной строке последовательно выполните команды:
 	1) npm install
-	2) npm install -g webpack-dev-server
-	3) webpack-dev-server
+	2) npm install -g webpack
+	3)npm install -g webpack-dev-server
+	Для запуска сервера
+	4) webpack-dev-server
 3. Наберите в браузере http://localhost:8080/
 
 Готово!

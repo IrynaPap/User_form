@@ -36,7 +36,7 @@ window.checkValidayte = function () {
         if (typeof id !== "undefined") {
             if (document.getElementById(id).style.display == "block") {
                 if (document.getElementById(id).value == "") {
-                    document.getElementById('error_soc').style.display = "inline-block";
+                    document.getElementById('error_soc').style.display = "block";
                     return false
                 } else {
                     document.getElementById('error_soc').style.display = "none";
@@ -51,7 +51,7 @@ window.checkValidayte = function () {
         }
     }
     if (i == 3) {
-        if (typeof image == "undefined") {
+        if (typeof image == "undefined" || image == "dog4") {
             document.getElementById('error_cat').style.display = "block";
             return false
         } else {

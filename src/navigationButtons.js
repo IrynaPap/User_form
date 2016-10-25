@@ -1,19 +1,22 @@
 require("selectize")
 var $ = require('jquery');
-
+window.curent = 0;
 
 window.page = function (page) {
-    if (checkValidayte()) {
+    var newPage = page.innerText;
+    var done = ($(".btn_nav_top").filter(function () {
+            return $(this).css("color")==="rgb(255, 152, 0)";
+    })).length;
+    if (newPage <= done + 1) {
         if (forms[page.innerText - 1].style.display !== "block") {
             forms[page.innerText - 1].style.display = "block";
             forms[i].style.display = "none";
-            i = page.innerText - 1
         }
+        i = page.innerText - 1
     }
 }
 
 window.next = function () {
-
     forms[i].setAttribute("page", i)
     if (checkValidayte()) {
         if (i !== forms.length - 1) {
@@ -43,6 +46,7 @@ function setBtnStyle(btn_id) {
     document.getElementById(btn_id).removeAttribute("class", "nav_btn")
     document.getElementById(btn_id).setAttribute("class", "btn btn-default text-center ")
     document.getElementById(btn_id).style.color = "#ffffff"
+    document.getElementById(btn_id).style.float = "left"
 }
 
 window.prev = function () {
@@ -81,9 +85,11 @@ window.start = function () {
     document.querySelector("input[type=email]").value = "";
 
 
-    while(document.getElementsByTagName("ul")[0].firstChild){
+    while (document.getElementsByTagName("ul")[0].firstChild) {
         document.getElementsByTagName("ul")[0].firstChild.remove()
     }
+
+    image = "undefined";
 
     n = $(".checkbox").length;
     for (var j = 0; j < n + 1; j++) {

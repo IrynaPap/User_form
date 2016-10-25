@@ -1,49 +1,50 @@
 <div class="row user_form">
-	<div class="col-xs-8 col-xs-offset-2 col-md-2 col-md-offset-5" style="margin-right:100%">
-		<div class="container-fluid">
+	<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4" style="margin-right:100%">
+		<div>
 			<p>3.Отметьте социальные сети </p>
-			<div id="checkboxes" class="row col-md-12 col-sm-12 col-sm-offset-1">
+			<div id="checkboxes" class="row col-md-12 col-sm-12">
 				<div class="form-group row">
-					<div class="checkbox row col-md-6 col-sm-6">
+					<div class="checkbox row col-md-2 col-sm-6">
 						<label>
 							<input type="checkbox" class="custom-control-input"  value="Facebook" onclick="check(this)">Facebook
 					</div>
-					<div class="row col-md-6 col-md-offset-2 col-sm-6">
+					<div class="row col-md-2 col-md-offset-2 col-sm-6">
 						<input type="text" id="Facebook" class="checked" placeholder="fb.com/youraccount" style="display:none" required/>
 					</div>
 				</div>
 				<div class="form-group row">
-					<div class="checkbox row col-md-6 col-sm-6">
+					<div class="checkbox row col-md-2 col-sm-6">
 						<label>
 							<input type="checkbox" value="Vkontakte" onclick="check(this)"> Вконтакте
 						</label>
 					</div>
-					<div class="row col-md-6 col-md-offset-2 col-sm-6">
+					<div class="row col-md-2 col-md-offset-2 col-sm-6">
 						<input type="text" id="Vkontakte" class="checked" placeholder="vk.com/youraccount" style="display:none" required/>
 					</div>
 				</div>
 				<div class="form-group row">
-					<div class="checkbox row col-md-6 col-sm-6">
+					<div class="checkbox row col-md-2 col-sm-6">
 						<label>
 							<input type="checkbox" value="Twitter" onclick="check(this)">Twitter
 						</label>
 					</div>
-					<div class="row col-md-6 col-md-offset-2 col-sm-6">
+					<div class="row col-md-2 col-md-offset-2 col-sm-6">
 						<input type="text" id="Twitter" class="checked" placeholder="twitter.com/youraccount" style="display:none" required/>
 					</div>
 				</div>
 				<div class="form-group row">
-					<div class="checkbox row col-md-6 col-sm-6">
+					<div class="checkbox row col-md-2 col-sm-6">
 						<label>
 							<input type="checkbox" value="Odnoklassniki" onclick="check(this)">Одноклассники
 						</label>
 					</div>
-					<div class="row col-md-6 col-md-offset-2 col-sm-6">
+					<div class="row col-md-2 col-md-offset-2 col-sm-6">
 						<input type="text" id="Odnoklassniki" class="checked" placeholder="ok.com/youraccount" style="display:none" required/>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div id="error_soc" class="error"> - Заполните поле социальной сети! </div>
 	</div>
 </div>
 <!--${require('./step3')}-->
